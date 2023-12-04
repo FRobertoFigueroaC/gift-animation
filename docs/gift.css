@@ -1,3 +1,23 @@
+  /* Typing text styles */
+  .typing{
+    width: 80%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.912);
+    padding: 20px 0 20px 0;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 28px;
+    text-align: center;
+  
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 4s steps(100, end); 
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+    to{width: 100%;}
+  } 
+/* Card styles */
 body {
     display: flex;
     justify-content: center;
@@ -234,6 +254,7 @@ body {
       transform: scaleX(0.85);
     }
   }
+/* Box styles */
   .box {
     position: relative;
   }
@@ -479,23 +500,3 @@ body {
               transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
     }
   }
-  
-  .typing{
-    width: 100%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.912);
-    padding: 20px 0 20px 0;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 28px;
-    text-align: center;
-
-    white-space: nowrap;
-    overflow: hidden;
-    animation: type 4s steps(100, end); 
-  }
-  
-  @keyframes type{ 
-    from { width: 0; } 
-    to{width: 100%;}
-  } 
-  
