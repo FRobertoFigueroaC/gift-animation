@@ -480,3 +480,22 @@ body {
     }
   }
   
+  .typing{
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.912);
+    padding: 20px 0 20px 0;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 28px;
+    text-align: center;
+
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 4s steps(100, end); 
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+    to{width: 100%;}
+  } 
+  
