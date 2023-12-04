@@ -1,9 +1,17 @@
-  /* Typing text styles */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FC9BC2;
+}
+/* Typing text styles */
   .typing{
-    width: 80%;
+    width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.912);
-    padding: 20px 0 20px 0;
+    padding-top: 100px;
     font-family: 'Brush Script MT', cursive;
     font-size: 28px;
     text-align: center;
@@ -18,13 +26,12 @@
     to{width: 100%;}
   } 
 /* Card styles */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #FC9BC2;
-  }
+.heading {
+  color: rgba(255, 255, 255, 0.912);
+  padding-bottom: 120px;
+  font-family: 'Brush Script MT', cursive;
+  text-align: center;
+}
 
   #card-instructions {
     text-align: center;
@@ -36,9 +43,11 @@ body {
     text-align: center;
 }
   
-  .container {
+  /* .container {
     position: relative;
-  }
+    width: 100%;
+    margin: 0;
+  } */
   
   .valentines {
     position: relative;
