@@ -1,4 +1,4 @@
-let container = document.getElementsByClassName("container");
+let container = document.getElementById("container");
 let card = document.getElementsByClassName("card");
 let valentines = document.getElementById("valentines");
 let box = document.getElementById("box");
@@ -15,11 +15,11 @@ box.addEventListener("click", (e) => {
     typing.style.display = 'block';
 });
 
-container[0].addEventListener("mouseenter", (e) => {
+container.addEventListener("mouseenter", (e) => {
     card[0].style.top = '-90px';
     card[0].style.animationDelay = '1s';
 });
-container[0].addEventListener("mouseleave", (e) => {
+container.addEventListener("mouseleave", (e) => {
     card[0].style.top = '0';
     card[0].style.animationDelay = '1s';
 });

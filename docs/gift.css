@@ -9,12 +9,8 @@ body {
 /* Typing text styles */
   .typing{
     width: 100%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.912);
     padding-top: 100px;
-    font-family: 'Brush Script MT', cursive;
     font-size: 28px;
-    text-align: center;
   
     white-space: nowrap;
     overflow: hidden;
@@ -26,22 +22,15 @@ body {
     to{width: 100%;}
   } 
 /* Card styles */
-.heading {
-  color: rgba(255, 255, 255, 0.912);
-  padding-bottom: 120px;
+.basic-font {
   font-family: 'Brush Script MT', cursive;
+  color: rgba(255, 255, 255, 0.912);
   text-align: center;
 }
-
-  #card-instructions {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.912);
-    padding: 40px;
-    margin: 100px;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 28px;
-    text-align: center;
+.heading {
+  padding-bottom: 120px;
 }
+
   
   /* .container {
     position: relative;
