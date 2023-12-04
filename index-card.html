@@ -1,0 +1,69 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="gift.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3 id="box-instructions"><strong>Da click en la caja para ver tu regalo</strong></h3>
+            <h3 id="card-instructions"><strong>Acerca el mouse a la carta</strong></h3>
+            <div class="box">
+                <div class="box-body">
+                    <!-- <img class="img" src="https://via.placeholder.com/150"> -->
+                    <div class="box-lid">
+                        <div class="box-bowtie"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="valentines" id="valentines">
+                <div class="envelope"></div>
+                <div class="front"></div>
+                <div class="card">
+                    <div class="text">Para la mas </br> hermosa</br> del mundo</div>
+                    <div class="heart"</div>
+                    </div>
+                    <div class="hearts">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                        <div class="four"></div>
+                        <div class="five"></div>
+                    </div>
+                </div>
+                <div class="shadow"></div>
+            </div>
+        </div>
+        <script>
+            let container = document.getElementsByClassName("container");
+            let card = document.getElementsByClassName("card");
+            let valentines = document.getElementById("valentines");
+            let box = document.getElementsByClassName("box");
+            let boxI = document.getElementById("box-instructions");
+            let cardI = document.getElementById("card-instructions");
+
+            valentines.style.display = 'none';
+            cardI.style.display = 'none';
+
+            box[0].addEventListener("click", (e) => {
+                box[0].style.display = 'none';
+                box[0].style.animationDelay = '0.5s';
+                boxI.style.display = 'none';
+
+                valentines.style.display = 'block';
+                cardI.style.display = 'block';
+            });
+            container[0].addEventListener("mouseenter", (e) => {
+                card[0].style.top = '-90px';
+                card[0].style.animationDelay = '0.5s';
+            });
+            container[0].addEventListener("mouseleave", (e) => {
+                card[0].style.top = '0';
+                card[0].style.animationDelay = '0.5s';
+            });
+           
+        </script>
+    </body>
+</html>
